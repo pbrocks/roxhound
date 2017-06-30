@@ -15,3 +15,13 @@ View the full source of this theme on Github: https://github.com/ryelle/Foxhound
 */
 
 /* This file is not used by for style, just for theme info for WordPress */
+
+
+
+@media ( min-width: 661px ){
+	.site-branding {
+		flex: 1 calc( 37.41176% - 75px );
+		-ms-flex: 1 19.41176%;
+		max-width: calc( 40.41176% - 75px );
+	}
+}

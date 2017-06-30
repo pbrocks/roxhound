@@ -21,9 +21,11 @@
 </head>
 
 <body <?php body_class(); ?>>
+	<div id="header-image" style="height: 4rem; width: 100%; background-color: salmon; padding: 2rem;">
+
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#main"><?php esc_html_e( 'Skip to content', 'foxhound' ); ?></a>
-
+<?php if ( is_home() ) : ?>
 	<header id="masthead" class="site-header" role="banner">
 		<div class="site-branding">
 			<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
@@ -40,5 +42,7 @@
 			) ); ?>
 		</nav><!-- #site-navigation -->
 	</header><!-- #masthead -->
+ </div><!-- #header-image -->
+<?php endif; ?>
 
 	<div id="content" class="site-content">
